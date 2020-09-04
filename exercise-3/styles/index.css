@@ -1,6 +1,8 @@
 body {
     background-color: white;
     font-family: 'Raleway', sans-serif;
+    margin: 0;
+    padding: 0;
 }
 
 .navigation ul {
@@ -12,6 +14,8 @@ body {
 .navigation li {
     font-weight: 100;
     letter-spacing: 2px;
+    padding: 10px;
+    list-style: none;
 }
 
 .navigation  li.current {
@@ -21,11 +25,21 @@ body {
     letter-spacing: 4px;
 }
 
+.global {
+    visibility: hidden;
+}
+
 #banner {
     background-image: url("../img/background-img.jpeg");
     background-size: cover;
     background-position: bottom center;
     width: 100%;
+    height: 350px;
+}
+
+.content {
+    width: 100%;
+    height: 100%;
 }
 
 h1 {
@@ -37,11 +51,22 @@ h1 {
     font-size: 42px;
     font-weight: 600;
     text-align: center;
+    border: 2px solid white;
 }
 
 #main {
     padding: 40px;
     text-align: center;
+    margin: 0 auto;
+    width: 500px;
+    height: 800px;
+    overflow: auto;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
+}
+
+#main::-webkit-scrollbar {
+    display: none;
 }
 
 h2 {
@@ -56,9 +81,14 @@ h3 {
     font-size: 14px;
     line-height: 48px;
     text-align: center;
+    border: 1px dotted red;
+    border-radius: 3px;
+    margin: 30px 20px;
+    padding: 20px 30px;
 }
 
 p {
+    margin-top: 40px;
     padding: 10px 20px;
     color: grey;
     font-size: 16px;
@@ -66,7 +96,8 @@ p {
 }
 
 .pull-quote {
-
+    width: 400px;
+    margin: 0 auto;
 }
 
 .byline {
@@ -92,6 +123,8 @@ p {
     color: white;
     display: inline-block;
     text-decoration: none;
+    padding: 14px;
+    margin: 10px;
 }
 
 .share a:hover {
